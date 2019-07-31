@@ -1,14 +1,15 @@
 .header-title {
   display: flex;
   flex-direction: row;
-  align-items: center;
   padding-left: 1em;
   font-weight: bold;
   font-style: italic;
 }
+.header-title-right {
+  height: 100%;
+}
 .header-title-text {
-  width: calc(100vw - 5em);
-  margin-left: 1em;
+  width: calc(100vw - 3em);
   text-align: center;
   font-size: 5em;
   font-family: "Arial Black", Gadget, sans-serif;

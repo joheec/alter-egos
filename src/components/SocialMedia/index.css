@@ -1,0 +1,12 @@
+.socialmedia-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-top: 1em;
+}
+.socialmedia-icon {
+  height: 3em;
+  width: 3em;
+  padding-right: 1em;
+  cursor: pointer;
+}
