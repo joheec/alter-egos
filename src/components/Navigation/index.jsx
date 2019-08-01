@@ -5,14 +5,9 @@ import './index.css';
 function Navigation() {
   return (
     <div className='navigation-container green-background'>
-      <Link to='/'>
-        <div className='navigation-button purple'>
-          HOME
-        </div>
-      </Link>
       <Link to='/merchandise'>
         <div className='navigation-button purple'>
-          MERCHANDISE
+          MERCH
         </div>
       </Link>
       <Link to='/calendar'>

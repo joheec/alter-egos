@@ -9,9 +9,8 @@ import Clips from '../Clips';
 
 function App() {
   return (
-    <div>
+    <Router>
       <Header />
-      <Router>
         <div>
           <Navigation />
           <div>
@@ -21,8 +20,7 @@ function App() {
             <Route exact path='/clips' component={Clips} />
           </div>
         </div>
-      </Router>
-    </div>
+    </Router>
   );
 };
 
