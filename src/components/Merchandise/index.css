@@ -1,3 +1,17 @@
 .merchandise-container {
   margin: 3em;
 }
+.merchandise-item-container {
+  display: inline-block;
+  background-color: white;
+  padding: 1em;
+}
+.merchandise-item-image {
+  height: 40vh;
+}
+.merchandise-item-image > img {
+  height: 90%;
+}
+.merchandise-item-price {
+  text-align: center;
+}

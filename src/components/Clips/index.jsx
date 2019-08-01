@@ -24,7 +24,11 @@ function Clips() {
             target='_blank'
             rel='noreferrer noopener'
           >
-            <img alt='Regularman Photography' src={RegularmanIcon} />
+            <img
+              alt='Regularman Photography'
+              src={RegularmanIcon}
+              className='clip-img'
+            />
             Photos
           </a>
           <a
@@ -32,7 +36,11 @@ function Clips() {
             target='_blank'
             rel='noreferrer noopener'
           >
-            <img alt={'Is\'s Corner'} src={IssIcon} />
+            <img
+              alt={'Is\'s Corner'}
+              src={IssIcon}
+              className='clip-img'
+            />
             Is's Announcer Corner!
           </a>
         </div>
@@ -44,7 +52,11 @@ function Clips() {
           target='_blank'
           rel='noreferrer noopener'
         >
-          <img alt='Regularman Photography' src={RegularmanIcon} />
+          <img
+            alt='Regularman Photography'
+            src={RegularmanIcon}
+            className='clip-img'
+          />
           Photos
         </a>
       </div>
@@ -55,7 +67,11 @@ function Clips() {
           target='_blank'
           rel='noreferrer noopener'
         >
-          <img alt='Regularman Photography' src={RegularmanIcon} />
+          <img
+            alt='Regularman Photography'
+            src={RegularmanIcon}
+            className='clip-img'
+          />
           Photos
         </a>
       </div>
