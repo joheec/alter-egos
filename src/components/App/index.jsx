@@ -3,20 +3,23 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Header from '../Header';
 import Navigation from '../Navigation';
 import Homepage from '../Homepage';
+import Merchandise from '../Merchandise';
 import Calendar from '../Calendar';
 import Clips from '../Clips';
-import './index.css';
 
 function App() {
   return (
-    <div className='app-container grey-background'>
+    <div>
       <Header />
       <Router>
-        <div className='app-content'>
+        <div>
           <Navigation />
-          <Route exact path='/' component={Homepage} />
-          <Route exact path='/calendar' component={Calendar} />
-          <Route exact path='/clips' component={Clips} />
+          <div>
+            <Route exact path='/' component={Homepage} />
+            <Route exact path='/merchandise' component={Merchandise} />
+            <Route exact path='/calendar' component={Calendar} />
+            <Route exact path='/clips' component={Clips} />
+          </div>
         </div>
       </Router>
     </div>
