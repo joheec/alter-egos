@@ -1,3 +1,9 @@
-.page {
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
   height: 100vh;
+}
+.app-content {
+  flex: 3;
 }

@@ -1,0 +1,10 @@
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 1.5em);
+}
+iframe {
+  height: 85%;
+  width: 85%;
+}

@@ -6,8 +6,18 @@ function Navigation() {
   return (
     <div className='navigation-container green-background'>
       <Link to='/'>
-        <div className='navigation-button purple'>
+        <div className='navigation-button grey'>
           HOME
+        </div>
+      </Link>
+      <Link to='/calendar'>
+        <div className='navigation-button grey'>
+          CALENDAR
+        </div>
+      </Link>
+      <Link to='/clips'>
+        <div className='navigation-button grey'>
+          CLIPS
         </div>
       </Link>
     </div>
