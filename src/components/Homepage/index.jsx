@@ -19,14 +19,14 @@ const Homepage = () => {
         </a>
       </div>
       <div className='homepage-photos-container'>
-        <img src={Photo1} alt='July 2019 Team Photo1' />
-        <img src={Photo2} alt='July 2019 Team Photo2' />
-        <img src={Photo3} alt='June 2019 Team Photo' />
+        <img src={Photo1} alt='July 2019 Team' />
+        <img src={Photo2} alt='July 2019 Team' />
+        <img src={Photo3} alt='June 2019 Team' />
       </div>
       <div className='photo-credit'>
         Photography Credit:
         <a
-          href='https://www.facebook.com/Regularman-Photography-424506950971470'
+          href='https://www.regularmanphotography.com/'
           target='_blank'
           rel='noreferrer noopener'
           className='purple'

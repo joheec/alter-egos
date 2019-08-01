@@ -1,0 +1,15 @@
+.clips-container {
+  font-family: "Lucida Console", Monaco, monospace;
+  text-align: center;
+  background-color: #fbfafb;
+  margin-top: 3em;
+  margin-left: 10%;
+  width: 80%;
+  padding: 1em 0;
+}
+.clip-link-container {
+  margin: 2em;
+}
+.clip-link-container > a {
+  color: #6B1D28;
+}
