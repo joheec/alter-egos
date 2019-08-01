@@ -13,7 +13,7 @@ const Homepage = () => {
           target='_blank'
           rel='noreferrer noopener'
         >
-          <div className='homepage-event green-background'>
+          <div className='homepage-event'>
             <b>SCRIMMAGE</b><br />AE vs Air Raid vs Tillamook<br />Aug 18, 2019 @ 10:30AM
           </div>
         </a>
