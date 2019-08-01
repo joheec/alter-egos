@@ -2,15 +2,21 @@
   display: flex;
   flex-direction: row;
   padding-left: 1em;
-  font-weight: bold;
-  font-style: italic;
 }
 .header-title {
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .header-title-text {
   width: calc(100vw - 3em);
   text-align: center;
   font-size: calc(100vh * 0.1);
   font-family: "Arial Black", Gadget, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+}
+.header-location {
+  text-align: right;
+  padding-right: 1em;
 }
