@@ -1,11 +1,11 @@
-.header-title {
+.header-container {
   display: flex;
   flex-direction: row;
   padding-left: 1em;
   font-weight: bold;
   font-style: italic;
 }
-.header-title-right {
+.header-title {
   height: 100%;
 }
 .header-title-text {
