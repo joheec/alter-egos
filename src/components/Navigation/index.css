@@ -8,9 +8,9 @@ a {
 }
 .navigation-button {
   padding: 0.5em;
+  font-weight: bold;
   cursor: pointer;
 }
 .navigation-button:hover {
-  font-weight: bold;
-  color: #31081F;
+  color: #632638;
 }

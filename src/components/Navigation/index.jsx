@@ -6,7 +6,7 @@ function Navigation() {
   return (
     <div className='navigation-container green-background'>
       <Link to='/'>
-        <div className='navigation-button white'>
+        <div className='navigation-button purple'>
           HOME
         </div>
       </Link>
