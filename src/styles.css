@@ -1,0 +1,12 @@
+:root {
+  --green: #808F85;
+  --grey: #595959;
+  --purple: #31081F;
+  --red: #632638;
+  --white: #FBFAFB;
+}
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  background-color: #541225;
+}

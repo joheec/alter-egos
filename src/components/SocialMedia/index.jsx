@@ -4,7 +4,7 @@ import {
   instagram,
   youtube,
 } from '../../assets/socialMedia';
-import './index.css';
+import './styles.css';
 
 function SocialMedia() {
   return (
