@@ -4,13 +4,11 @@ import './styles.css';
 
 function Splash() {
   return (
-    <div>
-      <img
-        alt="Alter Ego Roller Derby logo"
-        className='splash-logo'
-        src={Logo}
-      />
-    </div>
+    <img
+      alt="Alter Ego Roller Derby logo"
+      className='splash-logo'
+      src={Logo}
+    />
   );
 }
 

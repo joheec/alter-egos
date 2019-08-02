@@ -3,3 +3,13 @@
   flex-direction: column;
   justify-content: center;
 }
+.app-socialmedia {
+  display: flex;
+  justify-content: flex-end;
+  z-index: 3;
+}
+.app-splash {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+}
