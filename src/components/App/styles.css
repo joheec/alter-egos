@@ -8,7 +8,13 @@
   justify-content: center;
   background-color: var(--white);
 }
+.app-splash {
+  position: relative;
+}
 @media (min-width: 415px) {
+  .mobile {
+    display: none;
+  }
   .app-socialmedia {
     display: flex;
     justify-content: flex-end;
@@ -16,8 +22,18 @@
     background-color: transparent;
   }
   .app-splash {
-    height: 100vh;
     position: absolute;
+    height: 100vh;
     top: 0;
+  }
+  .app-events {
+    position: absolute;
+    top: 50%;
+    right: 4%;
+  }
+}
+@media (max-width: 414px) {
+  .desktop {
+    display: none;
   }
 }
