@@ -5,11 +5,19 @@
 }
 .app-socialmedia {
   display: flex;
-  justify-content: flex-end;
-  z-index: 3;
+  justify-content: center;
+  background-color: var(--white);
 }
-.app-splash {
-  position: absolute;
-  top: 0;
-  height: 100vh;
+@media (min-width: 415px) {
+  .app-socialmedia {
+    display: flex;
+    justify-content: flex-end;
+    z-index: 3;
+    background-color: transparent;
+  }
+  .app-splash {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+  }
 }
