@@ -5,13 +5,15 @@
   margin: 1em 0;
 }
 .merch-title {
-  margin: 1em;
+  text-align: center;
   color: var(--yellow);
+}
+.merch-items {
+  background-color: white;
+  margin: 1em;
 }
 .merch-item {
   display: inline-block;
-  background-color: white;
-  padding: 1em;
 }
 .merch-item-image {
   height: 40vh;
@@ -21,4 +23,18 @@
 }
 .merch-item-price {
   text-align: center;
+}
+@media (min-width: 415px) {
+  .merch-container {
+    background-color: var(--white);
+  }
+  .merch-title {
+    color: var(--green);
+  }
+  .merch-item {
+    border: solid 2px var(--green);
+  }
+  .merch-item:hover {
+    border: solid 2px var(--blue);
+  }
 }

@@ -1,9 +1,19 @@
 .calendar-container {
-  margin-top: 1em;
+  margin: 1em 0;
   display: flex;
+  align-items: center;
   justify-content: center;
+  height: 80vh;
 }
 iframe {
-  height: calc(100vh * 0.6);
+  height: 100%;
   width: 90%;
+}
+@media (min-width: 415px) {
+  .calendar-container {
+    height: 100vh;
+  }
+  iframe {
+    height: 90%;
+  }
 }
