@@ -10,10 +10,18 @@ iframe {
   width: 90%;
 }
 @media (min-width: 415px) {
+  .mobile {
+    display: none;
+  }
   .calendar-container {
     height: 100vh;
   }
   iframe {
     height: 90%;
+  }
+}
+@media (max-width: 414px) {
+  .desktop {
+    display: none;
   }
 }
