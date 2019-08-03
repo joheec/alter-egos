@@ -1,17 +1,24 @@
-.merchandise-container {
-  margin: 3em;
+.merch-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em 0;
 }
-.merchandise-item-container {
+.merch-title {
+  margin: 1em;
+  color: var(--yellow);
+}
+.merch-item {
   display: inline-block;
   background-color: white;
   padding: 1em;
 }
-.merchandise-item-image {
+.merch-item-image {
   height: 40vh;
 }
-.merchandise-item-image > img {
+.merch-item-image > img {
   height: 90%;
 }
-.merchandise-item-price {
+.merch-item-price {
   text-align: center;
 }

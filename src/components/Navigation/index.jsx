@@ -5,6 +5,11 @@ import './styles.css';
 function Navigation() {
   return (
     <div className='navigation-container'>
+      <Link to='/' className='desktop'>
+        <div className='navigation-button'>
+          HOME
+        </div>
+      </Link>
       <Link to='/merch'>
         <div className='navigation-button'>
           MERCH

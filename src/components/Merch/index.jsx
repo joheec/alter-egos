@@ -4,18 +4,18 @@ import './styles.css';
 
 function Merch() {
   return (
-    <div className='merchandise-container'>
-      <h2 className='white'>Available for Purchase at Practices, Scrimmages, and Bouts</h2>
-      <div className='merchandise-item-container'>
+    <div className='merch-container'>
+      <h2 className='merch-title'>Available for Purchase at Practices, Scrimmages, and Bouts</h2>
+      <div className='merch-item'>
         <a
           href='https://www.bonfire.com/alteregos/'
           target='_blank'
           rel='noreferrer noopener'
         >
-          <div className='merchandise-item-image'>
+          <div className='merch-item-image'>
             <img src={Tshirt1} alt='t-shirt' />
           </div>
-          <div className='merchandise-item-price'>
+          <div className='merch-item-price'>
             $21.99
           </div>
         </a>

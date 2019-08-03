@@ -8,9 +8,6 @@
   justify-content: center;
   background-color: var(--white);
 }
-.app-splash {
-  position: relative;
-}
 @media (min-width: 415px) {
   .mobile {
     display: none;
@@ -35,6 +32,11 @@
     position: absolute;
     bottom: 3em;
     width: 100%;
+  }
+  .app-content {
+    position: absolute;
+    top: 100vh;
+    margin-top: 5px;
   }
 }
 @media (max-width: 414px) {
