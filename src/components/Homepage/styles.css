@@ -1,0 +1,23 @@
+.homepage-container {
+}
+.homepage-photos {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+.homepage-photos > img {
+  margin-top: 5px;
+  width: 100%;
+  object-fit: scale-down;
+}
+.homepage-photos > img:first-child {
+  margin-top: 0;
+}
+.photo-credit {
+  margin: 0.5em 0;
+  text-align: center;
+  color: var(--blue);
+}
+.photo-credit > a {
+  font-weight: bold;
+}

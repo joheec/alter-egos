@@ -1,5 +1,5 @@
 :root {
-  --blue: #21B8CA;
+  --blue: #0a9fb1;
   --green: #4E6766;
   --purple: #1E152A;
   --red: #541225;
@@ -12,5 +12,6 @@ body {
   background-color: #541225;
 }
 a {
+  text-decoration: none;
   color: inherit;
 }

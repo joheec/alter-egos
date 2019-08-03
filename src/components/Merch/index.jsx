@@ -1,8 +1,8 @@
 import React from 'react';
-import Tshirt1 from '../../assets/merchandise-tshirt-001.jpeg';
-import './index.css';
+import Tshirt1 from './inventory/tshirt-001.jpeg';
+import './styles.css';
 
-function Merchandise() {
+function Merch() {
   return (
     <div className='merchandise-container'>
       <h2 className='white'>Available for Purchase at Practices, Scrimmages, and Bouts</h2>
@@ -24,4 +24,4 @@ function Merchandise() {
   );
 }
 
-export default Merchandise;
+export default Merch;

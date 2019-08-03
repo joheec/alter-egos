@@ -1,7 +1,7 @@
 import React from 'react';
-import IssIcon from '../../assets/iss-corner.png';
-import RegularmanIcon from '../../assets/regularman.png';
-import './index.css';
+import Photo from './photo-icon.png';
+import Video from './video-icon.png';
+import './styles.css';
 
 function Clips() {
   return (
@@ -26,7 +26,7 @@ function Clips() {
           >
             <img
               alt='Regularman Photography'
-              src={RegularmanIcon}
+              src={Video}
               className='clip-img'
             />
             Photos
@@ -38,7 +38,7 @@ function Clips() {
           >
             <img
               alt={'Is\'s Corner'}
-              src={IssIcon}
+              src={Photo}
               className='clip-img'
             />
             Is's Announcer Corner!
@@ -54,7 +54,7 @@ function Clips() {
         >
           <img
             alt='Regularman Photography'
-            src={RegularmanIcon}
+            src={Video}
             className='clip-img'
           />
           Photos
@@ -69,7 +69,7 @@ function Clips() {
         >
           <img
             alt='Regularman Photography'
-            src={RegularmanIcon}
+            src={Video}
             className='clip-img'
           />
           Photos
