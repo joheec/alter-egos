@@ -37,11 +37,11 @@ function Clips() {
             rel='noreferrer noopener'
           >
             <img
-              alt={'Isaac\'s Corner'}
+              alt={'Bob & Tom\'s Who\'s Who of Derby'}
               src={Photo}
               className='clip-img'
             />
-            Isaac's Corner!
+            Bob & Tom's Who's Who of Derby
           </a>
         </div>
       </div>
