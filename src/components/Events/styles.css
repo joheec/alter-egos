@@ -14,7 +14,7 @@
     margin-bottom: 0;
   }
   .events-details:hover {
-    background-color: var(--yellow);
+    background-color: #EACD62C2;
     color: var(--purple);
   }
 }
