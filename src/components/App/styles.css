@@ -18,11 +18,6 @@
     z-index: 3;
     background-color: transparent;
   }
-  .app-splash {
-    position: absolute;
-    height: 100vh;
-    top: 0;
-  }
   .app-events {
     position: absolute;
     top: 50%;

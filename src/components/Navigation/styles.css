@@ -20,6 +20,9 @@
   color: var(--white);
 }
 @media (min-width: 415px) {
+  .mobile {
+    display: none;
+  }
   .navigation-container {
     justify-content: center;
     background-color: transparent;
@@ -35,7 +38,20 @@
   }
 }
 @media (max-width: 414px) {
+  .desktop {
+    display: none;
+  }
   .navigation-container > a {
     flex-grow: 1;
   }
+}
+.active-mobile > .navigation-button{
+  background-color: var(--red);
+  border-color: transparent;
+  color: var(--white);
+}
+.active-desktop > .navigation-button {
+  background-color: var(--red);
+  border-color: var(--white);
+  color: var(--white);
 }
