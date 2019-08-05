@@ -20,9 +20,6 @@
   color: var(--white);
 }
 @media (min-width: 415px) {
-  .mobile {
-    display: none;
-  }
   .navigation-container {
     justify-content: center;
     background-color: transparent;
@@ -38,9 +35,6 @@
   }
 }
 @media (max-width: 414px) {
-  .desktop {
-    display: none;
-  }
   .navigation-container > a {
     flex-grow: 1;
   }

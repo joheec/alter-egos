@@ -9,9 +9,6 @@
   background-color: var(--white);
 }
 @media (min-width: 415px) {
-  .mobile {
-    display: none;
-  }
   .app-socialmedia {
     display: flex;
     justify-content: flex-end;
@@ -33,10 +30,5 @@
     top: 100vh;
     margin-top: 5px;
     width: 100%;
-  }
-}
-@media (max-width: 414px) {
-  .desktop {
-    display: none;
   }
 }

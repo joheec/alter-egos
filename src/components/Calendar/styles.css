@@ -19,12 +19,4 @@ iframe {
   iframe {
     height: 100%;
   }
-  .mobile {
-    display: none;
-  }
-}
-@media (max-width: 414px) {
-  .desktop {
-    display: none;
-  }
 }

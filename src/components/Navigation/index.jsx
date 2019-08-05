@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { ViewContext, views } from '../../view-context';
 import './styles.css';
 
 class Navigation extends React.Component {
@@ -16,64 +17,66 @@ class Navigation extends React.Component {
 
   render() {
     return (
-      <div>
-        <div className='desktop navigation-container'>
-          <NavLink exact activeClassName='active-desktop' to='/'>
-            <div
-              onClick={this.handleOnClick}
-              className='navigation-button'
+      <ViewContext.Consumer>
+      {
+        view => (
+          <div className='navigation-container'>
+          {
+            view === views.DESKTOP && (
+              <NavLink
+                exact
+                activeClassName='active-desktop'
+                to='/'
+              >
+                <div
+                  onClick={this.handleOnClick}
+                  className='navigation-button'
+                >
+                  HOME
+                </div>
+              </NavLink>
+            )
+          }
+            <NavLink
+              exact
+              activeClassName={view === views.MOBILE ? 'active-mobile': 'active-desktop'}
+              to='/merch'
             >
-              HOME
-            </div>
-          </NavLink>
-          <NavLink exact activeClassName='active-desktop' to='/merch'>
-            <div
-              className='navigation-button'
-              onClick={this.handleOnClick}
+              <div
+                className='navigation-button'
+                onClick={this.handleOnClick}
+              >
+                MERCH
+              </div>
+            </NavLink>
+            <NavLink
+              exact
+              activeClassName={view === views.MOBILE ? 'active-mobile': 'active-desktop'}
+              to='/calendar'
             >
-              MERCH
-            </div>
-          </NavLink>
-          <NavLink exact activeClassName='active-desktop' to='/calendar'>
-            <div
-              className='navigation-button'
-              onClick={this.handleOnClick}
+              <div
+                className='navigation-button'
+                onClick={this.handleOnClick}
+              >
+                CALENDAR
+              </div>
+            </NavLink>
+            <NavLink
+              exact
+              activeClassName={view === views.MOBILE ? 'active-mobile': 'active-desktop'}
+              to='/clips'
             >
-              CALENDAR
-            </div>
-          </NavLink>
-          <NavLink exact activeClassName='active-desktop' to='/clips'>
-            <div
-              className='navigation-button'
-              onClick={this.handleOnClick}
-            >
-              CLIPS
-            </div>
-          </NavLink>
-        </div>
-        <div className='mobile navigation-container'>
-          <NavLink className='desktop' exact activeClassName='active-mobile' to='/'>
-            <div className='navigation-button'>
-              HOME
-            </div>
-          </NavLink>
-          <NavLink exact activeClassName='active-mobile' to='/merch'>
-            <div className='navigation-button'>
-              MERCH
-            </div>
-          </NavLink>
-          <NavLink exact activeClassName='active-mobile' to='/calendar'>
-            <div className='navigation-button'>
-              CALENDAR
-            </div>
-          </NavLink>
-          <NavLink exact activeClassName='active-mobile' to='/clips'>
-            <div className='navigation-button'>
-              CLIPS
-            </div>
-          </NavLink>
-        </div>
-      </div>
+              <div
+                className='navigation-button'
+                onClick={this.handleOnClick}
+              >
+                CLIPS
+              </div>
+            </NavLink>
+          </div>
+        )
+      }
+      </ViewContext.Consumer>
     );
   }
 }
