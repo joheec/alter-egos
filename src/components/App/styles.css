@@ -15,20 +15,4 @@
     z-index: 3;
     background-color: transparent;
   }
-  .app-events {
-    position: absolute;
-    top: 50%;
-    right: 4%;
-  }
-  .app-navigation {
-    position: absolute;
-    bottom: 3em;
-    width: 100%;
-  }
-  .app-content {
-    position: absolute;
-    top: 100vh;
-    margin-top: 5px;
-    width: 100%;
-  }
 }

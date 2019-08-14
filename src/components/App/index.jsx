@@ -1,14 +1,23 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Calendar from '../Calendar';
-import Clips from '../Clips';
-import Homepage from '../Homepage';
-import Navigation from '../Navigation';
-import Merch from '../Merch';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import SocialMedia from '../SocialMedia';
-import Splash from '../Splash';
+import PublicApp from '../PublicApp';
+import MemberApp from '../MemberApp';
 import  { ViewContext, views } from '../../view-context';
 import './styles.css';
+
+import { Auth0Provider } from '../../auth0-wrapper';
+import config from '../../auth_config.json';
+
+const onRedirectCallback = appState => {
+  window.history.replaceState(
+    {},
+    document.title,
+    appState && appState.targetUrl
+      ? appState.targetUrl
+      : window.location.pathname
+  );
+};
 
 class App extends React.Component {
   constructor() {
@@ -30,24 +39,26 @@ class App extends React.Component {
       : views.DESKTOP
     });
   }
+
   render() {
     return (
       <Router>
         <ViewContext.Provider value={this.state.view}>
           <div className='app-container'>
-            <div className='app-socialmedia'>
-              <SocialMedia />
-            </div>
-            <Splash />
-            <div className='app-navigation'>
-              <Navigation scrollRef={this.contentRef} />
-            </div>
-            <div className='app-content' ref={this.contentRef}>
-              <Route exact path='/' component={Homepage} />
-              <Route exact path='/merch' component={Merch} />
-              <Route exact path='/calendar' component={Calendar} />
-              <Route exact path='/clips' component={Clips} />
-            </div>
+            <Auth0Provider
+              domain={config.domain}
+              client_id={config.clientId}
+              redirect_uri={window.location.origin}
+              onRedirectCallback={onRedirectCallback}
+            >
+              <div className='app-socialmedia'>
+                <SocialMedia />
+              </div>
+              <Switch>
+                <Route path='/member' component={MemberApp} />
+                <PublicApp contentRef={this.contentRef} />
+              </Switch>
+            </Auth0Provider>
           </div>
         </ViewContext.Provider>
       </Router>

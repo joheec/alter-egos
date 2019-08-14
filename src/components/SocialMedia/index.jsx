@@ -1,10 +1,13 @@
 import React from 'react';
+import { useAuth0 } from '../../auth0-wrapper';
 import Facebook from './facebook.png';
 import Instagram from './instagram.png';
 import YouTube from './youtube.png';
 import './styles.css';
 
 function SocialMedia() {
+  const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
+
   return (
     <div className='socialmedia-container'>
       <div className='socialmedia-icons'>
@@ -42,6 +45,8 @@ function SocialMedia() {
             alt='YouTube'
           />
         </a>
+        {!isAuthenticated && (<div className='account' onClick={() => loginWithRedirect({})}>log in</div>)}
+        {isAuthenticated && (<div className='account' onClick={logout}>log out</div>)}
       </div>
     </div>
   );
