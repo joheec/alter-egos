@@ -1,5 +1,9 @@
 .socialmedia-container {
-  display: inline-block;
+  display:flex;
+  align-items: center;
+}
+.socialmedia-container > a {
+  height: 2.5em;
 }
 .socialmedia-icons {
   display: flex;
@@ -7,6 +11,7 @@
   justify-content: center;
   align-items: center;
   padding: 0.5em;
+  padding-right: 0;
 }
 .socialmedia-icons > a {
   display: flex;
@@ -18,6 +23,13 @@
 .socialmedia-icon {
   height: 100%;
   width: 100%;
+  cursor: pointer;
+}
+.socialmedia-logo {
+  background-color: #000000;
+  height: 2.5em;
+  width: 2.5em;
+  border-radius: 1.5em;
   cursor: pointer;
 }
 #youtube.socialmedia-icon {
@@ -36,4 +48,12 @@
 .account:hover {
   color: var(--white);
   background-color: black;
+}
+@media (min-width: 415px) {
+  .socialmedia-container {
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 1em;
+    z-index: 1;
+  }
 }

@@ -1,15 +1,30 @@
 import React from 'react';
-import { useAuth0 } from '../../auth0-wrapper';
+import { withRouter, NavLink } from 'react-router-dom';
+import auth0Client from '../../Auth';
+import Logo from '../../assets/logo.png';
 import Facebook from './facebook.png';
 import Instagram from './instagram.png';
 import YouTube from './youtube.png';
 import './styles.css';
 
-function SocialMedia() {
-  const { isAuthenticated, loginWithRedirect, logout } = useAuth0();
+function SocialMedia(props) {
+  const logout = () => {
+    auth0Client.logout();
+    props.history.replace('/');
+  };
 
   return (
     <div className='socialmedia-container'>
+      <NavLink
+        exact
+        to='/'
+      >
+        <img
+          className='socialmedia-logo'
+          src={Logo}
+          alt='Navigate to Homepage'
+        />
+      </NavLink>
       <div className='socialmedia-icons'>
         <a
           href='https://www.facebook.com/AlterEgosRollerDerby/'
@@ -45,11 +60,11 @@ function SocialMedia() {
             alt='YouTube'
           />
         </a>
-        {!isAuthenticated && (<div className='account' onClick={() => loginWithRedirect({})}>log in</div>)}
-        {isAuthenticated && (<div className='account' onClick={logout}>log out</div>)}
+        {!auth0Client.isAuthenticated() && (<div className='account' onClick={auth0Client.login}>login</div>)}
+        {auth0Client.isAuthenticated() && (<div className='account' onClick={logout}>logout</div>)}
       </div>
     </div>
   );
 }
 
-export default SocialMedia;
+export default withRouter(SocialMedia);

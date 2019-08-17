@@ -6,16 +6,9 @@ import Homepage from '../Homepage';
 import Navigation from '../Navigation';
 import Merch from '../Merch';
 import Splash from '../Splash';
-import { useAuth0 } from '../../auth0-wrapper';
 import './styles.css';
 
 function PublicApp({ contentRef }) {
-  const { loading } = useAuth0();
-
-  if (loading) {
-    return <div>LOADING...</div>;
-  }
-
   return (
     <Fragment>
       <Splash />

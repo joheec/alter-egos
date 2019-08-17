@@ -7,9 +7,13 @@
   --yellow: #EACD62;
 }
 body {
+  height: 100vh;
   margin: 0;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   background-color: #541225;
+}
+#root {
+  height: 100%;
 }
 a {
   text-decoration: none;
