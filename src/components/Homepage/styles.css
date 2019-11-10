@@ -1,23 +1,31 @@
 .homepage-container {
-}
-.homepage-photos {
+  background: url("../../assets/logo.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  justify-content: space-between;
 }
-.homepage-photos > img {
-  margin-top: 5px;
-  width: 100%;
-  object-fit: contain;
-}
-.homepage-photos > img:first-child {
-  margin-top: 0;
-}
-.photo-credit {
-  margin: 0.5em 0;
+.homepage-location {
+  color: #5f5b5b;
   text-align: center;
-  color: var(--blue);
+  width: 100%;
+  margin-top: 1em;
+  font-weight: bolder;
 }
-.photo-credit > a {
-  font-weight: bold;
+.homepage-navigation {
+  height: calc(100vh - 5em);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.homepage-navigation-buttons {
+  width: 100%;
+  position: relative;
+  bottom: 1em;
+}
+.homepage-events {
+  background-color: #a23434d1;
 }

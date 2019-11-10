@@ -1,0 +1,21 @@
+.photos-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+.photos-album > img {
+  margin-top: 5px;
+  width: 100%;
+  object-fit: contain;
+}
+.photos-album > img:first-child {
+  margin-top: 0;
+}
+.photos-credit {
+  margin: 0.5em 0;
+  text-align: center;
+  color: var(--blue);
+}
+.photos-credit > a {
+  font-weight: bold;
+}

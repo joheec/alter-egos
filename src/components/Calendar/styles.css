@@ -11,12 +11,3 @@ iframe {
   width: 100%;
   height: 100%;
 }
-@media (min-width: 415px) {
-  .calendar-container {
-    padding: 0;
-    height: 100vh;
-  }
-  iframe {
-    height: 100%;
-  }
-}

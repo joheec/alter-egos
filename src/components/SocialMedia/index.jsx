@@ -12,19 +12,23 @@ function SocialMedia(props) {
     auth0Client.logout();
     props.history.replace('/');
   };
+  console.log(props.history);
 
   return (
     <div className='socialmedia-container'>
-      <NavLink
-        exact
-        to='/'
-      >
-        <img
-          className='socialmedia-logo'
-          src={Logo}
-          alt='Navigate to Homepage'
-        />
-      </NavLink>
+      {
+        props.history.location.pathname.includes('member') &&
+          <NavLink
+            exact
+            to='/'
+          >
+            <img
+              className='socialmedia-logo'
+              src={Logo}
+              alt='Navigate to Homepage'
+            />
+          </NavLink>
+      }
       <div className='socialmedia-icons'>
         <a
           href='https://www.facebook.com/AlterEgosRollerDerby/'

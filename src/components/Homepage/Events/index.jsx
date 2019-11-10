@@ -5,14 +5,14 @@ const Events = () => {
   return (
     <a
       className='events-container'
-      href='https://www.facebook.com/events/349932092610228'
+      href='https://www.facebook.com/events/1458067034340378/'
       target='_blank'
       rel='noreferrer noopener'
     >
       <div className='events-details'>
         <div><b>CHECK OUT OUR NEXT SCRIMMAGE</b></div>
         <div>Alter Egos vs Air Raid vs Tillamook</div>
-        <div>Aug 18, 2019 @ 10:30AM</div>
+        <div>Nov 14, 2019 @ 8:30PM</div>
       </div>
     </a>
   );

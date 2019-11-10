@@ -24,17 +24,3 @@
 .merch-item-price {
   text-align: center;
 }
-@media (min-width: 415px) {
-  .merch-container {
-    background-color: var(--white);
-  }
-  .merch-title {
-    color: var(--green);
-  }
-  .merch-item {
-    border: solid 2px var(--green);
-  }
-  .merch-item:hover {
-    border: solid 2px var(--blue);
-  }
-}

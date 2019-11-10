@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { withRouter } from 'react-router-dom';
-import auth0Client from '../../Auth';
+import auth0Client from '../../../Auth';
 import noAccess from './no-access.jpg';
 import './styles.css';
 

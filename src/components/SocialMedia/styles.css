@@ -49,11 +49,3 @@
   color: var(--white);
   background-color: black;
 }
-@media (min-width: 415px) {
-  .socialmedia-container {
-    width: 100%;
-    justify-content: space-between;
-    margin: 0 1em;
-    z-index: 1;
-  }
-}
