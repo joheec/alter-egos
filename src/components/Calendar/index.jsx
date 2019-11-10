@@ -1,4 +1,5 @@
 import React from 'react';
+import Popup from '../Popup';
 import './styles.css';
 
 function Calendar() {
@@ -12,4 +13,4 @@ function Calendar() {
   );
 }
 
-export default Calendar;
+export default Popup(Calendar, '/calendar');

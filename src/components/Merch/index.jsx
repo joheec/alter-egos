@@ -1,4 +1,5 @@
 import React from 'react';
+import Popup from '../Popup';
 import Tshirt1 from './inventory/tshirt-001.jpeg';
 import './styles.css';
 
@@ -26,4 +27,4 @@ function Merch() {
   );
 }
 
-export default Merch;
+export default Popup(Merch, '/merch');

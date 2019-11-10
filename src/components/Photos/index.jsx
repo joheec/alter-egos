@@ -1,10 +1,11 @@
 import React from 'react';
+import Popup from '../Popup';
 import Photo1 from './2019-07-09-001.jpg';
 import Photo2 from './2019-07-09-002.jpg';
 import Photo3 from './2019-06-30.jpg';
 import './styles.css';
 
-const Homepage = () => {
+const Photos = () => {
   return (
     <div className='photos-container'>
       <div className='photos-album'>
@@ -25,4 +26,4 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default Popup(Photos, '/photos');

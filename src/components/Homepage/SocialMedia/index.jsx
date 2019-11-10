@@ -1,7 +1,7 @@
 import React from 'react';
-import Facebook from './facebook.png';
-import Instagram from './instagram.png';
-import YouTube from './youtube.png';
+import Facebook from './assets/facebook.png';
+import Instagram from './assets/instagram.png';
+import YouTube from './assets/youtube.png';
 import './styles.css';
 
 function SocialMedia(props) {

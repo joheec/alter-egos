@@ -6,7 +6,7 @@ import {
 import { CSSTransition } from 'react-transition-group';
 import './styles.css';
 
-const Popup = (Component) => (path) => {
+const Popup = (Component, path = '') => {
   const routePath = path[0] === '/' ? path : '/' + path;
   return () => (
     <Route path={routePath} exact>
