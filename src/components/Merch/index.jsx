@@ -1,6 +1,6 @@
 import React from 'react';
 import Popup from '../Popup';
-import Tshirt1 from './inventory/tshirt-001.jpeg';
+import inventory from './assets';
 import './styles.css';
 
 function Merch() {
@@ -8,20 +8,24 @@ function Merch() {
     <div className='merch-container'>
       <h2 className='merch-title'>Available for Purchase at Practices, Scrimmages, and Bouts</h2>
       <div className='merch-items'>
-        <div className='merch-item'>
-          <a
-            href='https://www.bonfire.com/alteregos/'
-            target='_blank'
-            rel='noreferrer noopener'
-          >
-            <div className='merch-item-image'>
-              <img src={Tshirt1} alt='t-shirt' />
-            </div>
-            <div className='merch-item-price'>
-              $21.99
-            </div>
-          </a>
-        </div>
+      {
+        inventory.map(({ alt, image, link, price }) => (
+          <div className='merch-item'>
+            <a
+              href={link}
+              target='_blank'
+              rel='noreferrer noopener'
+            >
+              <div className='merch-item-image'>
+                <img src={image} alt={alt} />
+              </div>
+              <div className='merch-item-price'>
+                {price}
+              </div>
+            </a>
+          </div>
+        ))
+      }
       </div>
     </div>
   );
