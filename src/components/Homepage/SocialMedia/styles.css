@@ -1,12 +1,14 @@
-.socialmedia-icon:first-of-type {
+.socialmedia-link {
   margin-top: 2em;
-}
-.socialmedia-icon {
   margin-left: 0.5em;
-  height: 2.5em;
-  width: 2.5em;
+  height: 3em;
+  width: 3em;
   cursor: pointer;
 }
-#youtube.socialmedia-icon {
-  height: 2em;
+#youtube.socialmedia-link {
+  height: 2.5em;
+  width: 3em;
+}
+.socialmedia-icon {
+  width: 100%;
 }

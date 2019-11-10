@@ -8,6 +8,7 @@ function SocialMedia(props) {
   return (
     <>
       <a
+        className="socialmedia-link"
         href='https://www.facebook.com/AlterEgosRollerDerby/'
         target='_blank'
         rel='noreferrer noopener'
@@ -19,6 +20,7 @@ function SocialMedia(props) {
         />
       </a>
       <a
+        className="socialmedia-link"
         href='https://www.instagram.com/alteregosrollerderby/'
         target='_blank'
         rel='noreferrer noopener'
@@ -30,6 +32,7 @@ function SocialMedia(props) {
         />
       </a>
       <a
+        className="socialmedia-link"
         href='https://www.youtube.com/channel/UCrPU80wexCpfgzx6QfGld_w'
         target='_blank'
         rel='noreferrer noopener'

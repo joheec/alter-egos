@@ -16,9 +16,7 @@ function Homepage() {
           <Navigation />
         </div>
       </div>
-      <div className="homepage-events">
-        <Events />
-      </div>
+      <Events />
     </div>
   );
 }

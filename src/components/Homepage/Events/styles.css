@@ -1,5 +1,10 @@
 .events-details {
+  padding-bottom: 4px;
   color: #ffffff;
+  background-color: #a23434d1;
   text-align: center;
-  margin-bottom: 4px;
+}
+.events-details:hover {
+  color: black;
+  background-color: white;
 }
