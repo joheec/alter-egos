@@ -14,7 +14,6 @@
 .photos-credit {
   margin: 0.5em 0;
   text-align: center;
-  color: var(--blue);
 }
 .photos-credit > a {
   font-weight: bold;

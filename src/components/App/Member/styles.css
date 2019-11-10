@@ -9,6 +9,6 @@
   flex-grow: 1;
 }
 .member-no-access-container > .message {
-  color: var(--white);
+  color: white;
   margin: 1em;
 }

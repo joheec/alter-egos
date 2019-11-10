@@ -1,0 +1,12 @@
+.socialmedia-icon:first-of-type {
+  margin-top: 2em;
+}
+.socialmedia-icon {
+  margin-left: 0.5em;
+  height: 2.5em;
+  width: 2.5em;
+  cursor: pointer;
+}
+#youtube.socialmedia-icon {
+  height: 2em;
+}

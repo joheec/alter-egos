@@ -1,5 +1,5 @@
 .homepage-container {
-  background: url("../../assets/logo.png");
+  background: url("./logo.png");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -18,8 +18,8 @@
 .homepage-navigation {
   height: calc(100vh - 5em);
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .homepage-navigation-buttons {
   width: 100%;
