@@ -10,7 +10,7 @@ function Merch() {
       <div className='merch-items'>
       {
         inventory.map(({ alt, image, link, price }) => (
-          <div className='merch-item'>
+          <div className='merch-item' key={alt}>
             <a
               href={link}
               target='_blank'
