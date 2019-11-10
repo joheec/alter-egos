@@ -9,11 +9,17 @@
   justify-content: space-between;
 }
 .homepage-location {
-  color: #5f5b5b;
+  color: #1660e6;
   text-align: center;
   width: 100%;
-  margin-top: 1em;
+  margin-top: 0.5em;
+  font-size: 1.25em;
   font-weight: bolder;
+}
+@media only screen and (min-width: 600px) {
+  .homepage-location {
+    font-size: 2em;
+  }
 }
 .homepage-navigation {
   height: calc(100vh - 5em);
