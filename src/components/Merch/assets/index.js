@@ -7,7 +7,7 @@ export default [
     image: gearspray,
     alt: 'gear spray',
     link: "https://www.facebook.com/messages/t/esther.allegri",
-    price: 'Gear Spray (medium) $10 (small) $3',
+    price: 'Gear Spray (medium) $10 (small) $5',
   }, {
     image: bathsalts,
     alt: 'bath salts',
