@@ -7,6 +7,34 @@
 .merch-title {
   text-align: center;
 }
+.merch-sales {
+  width: 90%;
+}
+.merch-sales-row {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  border-bottom: 2px dotted grey;
+}
+.merch-sales-row > div {
+  width: 33%;
+  padding-right: 2%;
+}
+.merch-sales-event {
+  width: 30%;
+}
+.merch-sales-location {
+  padding-right: 0;
+}
+.merch-sales-header {
+  font-weight: bold;
+}
+.merch-sales-row > div > a {
+  color: maroon;
+}
+.merch-sales-row > div > a:hover {
+  text-decoration: underline;
+}
 .merch-items {
   background-color: white;
   margin: 1em;
