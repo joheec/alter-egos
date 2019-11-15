@@ -1,0 +1,8 @@
+.tooltip-text {
+  visibility: hidden;
+  text-align: center;
+  color: maroon;
+}
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import Popup from '../Popup';
+import Tooltip from '../Tooltip';
 import inventory from './assets';
 import './styles.css';
 
@@ -12,23 +13,6 @@ function Merch() {
           <div className="merch-sales-date">date</div>
           <div className="merch-sales-event">event</div>
           <div className="merch-sales-location">location</div>
-        </div>
-        <div className="merch-sales-row">
-          <div className="merch-sales-date">Thurs Nov 14, 2019 @ 8:30pm</div>
-          <div>
-            <a
-              href="https://www.facebook.com/events/1458067034340378/"
-              target='_blank'
-              rel='noreferrer noopener'
-            >Alter Egos Scrimmage</a>
-          </div>
-          <div className="merch-sales-location">
-            <a
-              href="https://goo.gl/maps/AZbSCNFLxfUT8GHCA"
-              target='_blank'
-              rel='noreferrer noopener'
-            >R A Brown Middle School</a>
-          </div>
         </div>
         <div className="merch-sales-row">
           <div className="merch-sales-date">Fri Nov 22, 2019 @ 7am-5pm</div>
@@ -62,20 +46,22 @@ function Merch() {
       <div className='merch-items'>
       {
         inventory.map(({ alt, image, link, price }) => (
-          <div className='merch-item' key={alt}>
-            <a
-              href={link}
-              target='_blank'
-              rel='noreferrer noopener'
-            >
-              <div className='merch-item-image'>
-                <img src={image} alt={alt} />
-              </div>
-              <div className='merch-item-price'>
-                {price}
-              </div>
-            </a>
-          </div>
+          <Tooltip key={alt} text="Click to message Legs for more details via Facebook">
+            <div className='merch-item'>
+              <a
+                href={link}
+                target='_blank'
+                rel='noreferrer noopener'
+              >
+                <div className='merch-item-image'>
+                  <img src={image} alt={alt} />
+                </div>
+                <div className='merch-item-price'>
+                  {price}
+                </div>
+              </a>
+            </div>
+          </Tooltip>
         ))
       }
       </div>
